@@ -2,7 +2,7 @@
     composes: root from '../clickable.css';
     background: none;
     border: 1px solid rgb(var(--bgColor));
-    border-radius: 1.5rem;
+    border-radius: 0.5rem;
     color: rgb(var(--color));
     font-size: 0.75rem;
     font-weight: 600;
@@ -19,6 +19,7 @@
 .filled {
     background-color: rgb(var(--bgColor));
     /* background-color: red; */
+    width: 100%;
     color: white;
 }
 
@@ -51,6 +52,7 @@
     grid-auto-flow: column;
     justify-content: center;
     justify-items: center;
+    font-size: 4.5vw;
 }
 
 /* derived classes */
@@ -71,4 +73,5 @@
 }
 .root_highPriority {
     composes: root filled;
+
 }

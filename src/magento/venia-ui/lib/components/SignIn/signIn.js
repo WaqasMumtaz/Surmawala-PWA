@@ -1,7 +1,7 @@
 import React, { useCallback, useRef } from 'react';
 import { func, shape, string } from 'prop-types';
 import { Form } from 'informed';
-
+import logo from '../Logo/surmawala-icon.svg';
 import { mergeClasses } from '../../classify';
 import Button from '../Button';
 import Field from '../Field';
@@ -68,6 +68,15 @@ const SignIn = props => {
 
     return (
         <div className={classes.root}>
+            <div className={classes.logoContainer}>
+            <img
+                // className={classes.indicator}
+                src={logo}
+                width="64"
+                height="64"
+                // alt="logo"
+            />
+            </div>
             <Form
                 ref={formRef}
                 className={classes.form}

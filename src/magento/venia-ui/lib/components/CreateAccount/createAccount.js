@@ -9,6 +9,7 @@ import Checkbox from '../Checkbox';
 import Field from '../Field';
 import TextInput from '../TextInput';
 import combine from '../../util/combineValidators';
+import logo from '../Logo/surmawala-icon.svg'
 import {
     validateEmail,
     isRequired,
@@ -54,6 +55,15 @@ const CreateAccount = props => {
             initialValues={sanitizedInitialValues}
             onSubmit={onSubmit}
         >
+            <div className={classes.logoContainer}>
+            <img
+                // className={classes.indicator}
+                src={logo}
+                width="64"
+                height="64"
+                // alt="logo"
+            />
+            </div>
             <p className={classes.lead}>{LEAD}</p>
             <Field label="First Name" required={true}>
                 <TextInput

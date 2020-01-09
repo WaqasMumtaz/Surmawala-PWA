@@ -19,6 +19,7 @@ const Main = props => {
     return (
         <main className={rootClass}>
             <Header />
+            {console.log('Magento Main page')}
             <div className={pageClass}>{children}</div>
             <Footer />
         </main>

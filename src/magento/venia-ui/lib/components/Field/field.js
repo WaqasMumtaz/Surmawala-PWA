@@ -14,7 +14,7 @@ const Field = props => {
     return (
         <div className={classes.root}>
             <span className={classes.label}>
-                {requiredSymbol}
+                {/* {requiredSymbol} */}
                 {label}
             </span>
             {children}

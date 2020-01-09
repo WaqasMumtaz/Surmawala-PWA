@@ -14,7 +14,7 @@
 .input {
     background: white;
     border: 1px solid rgb(var(--venia-text-alt));
-    border-radius: 2px;
+    border-radius: 5px;
     color: rgb(var(--venia-text));
     display: inline-flex;
     flex: 0 0 100%;
