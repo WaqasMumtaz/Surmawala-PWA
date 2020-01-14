@@ -43,6 +43,7 @@ export default class MagentoRouteHandler extends Component {
 
     componentDidMount() {
         const { pathname } = this.props.location;
+        
         const isSearch = pathname === '/search.html';
         mountedInstances.add(this);
         if (!isSearch) {

@@ -160,6 +160,7 @@ const ProductFullDetail = props => {
             </section>
             <section className={classes.quantity}>
                 <h2 className={classes.quantityTitle}>Quantity</h2>
+                
                 <Quantity initialValue={quantity} onValueChange={setQuantity} />
             </section>
             <section className={classes.cartActions}>

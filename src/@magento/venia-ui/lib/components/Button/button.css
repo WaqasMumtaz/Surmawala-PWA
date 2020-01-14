@@ -1,0 +1,77 @@
+.root {
+    composes: root from '../clickable.css';
+    background: none;
+    /* border: 1px solid rgb(var(--bgColor)); */
+    border-radius: 1.5rem;
+    color: rgb(var(--color));
+    /* font-size: 3vw; */
+    font-weight: 600;
+    height: 2rem;
+    /* min-width: 7.5rem; */
+    width: 100%;
+    padding: 0 3rem;
+    transition-duration: 384ms;
+    transition-property: background-color, color;
+    transition-timing-function: var(--venia-anim-standard);
+    --color: var(--venia-text);
+    --bgColor:var(--surmawala-bg)
+}
+
+.filled {
+    background-color: rgb(var(--bgColor));
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.root:hover {
+    --color: var(--venia-teal);
+}
+
+.root:focus {
+    box-shadow: 0 0 0 2px rgb(var(--venia-teal-light)),
+        0 0 0.5rem 2px rgba(var(--venia-teal), 0.2);
+    outline: none;
+    transition-duration: 128ms;
+    --color: var(--venia-teal);
+}
+
+.root:active {
+    transition-duration: 128ms;
+    --color: var(--venia-teal-dark);
+}
+
+.root:disabled {
+    pointer-events: none;
+    --color: var(--venia-grey-dark);
+}
+
+.content {
+    align-items: center;
+    display: inline-grid;
+    gap: 0.5rem;
+    grid-auto-flow: column;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+/* derived classes */
+
+.root_lowPriority {
+    composes: root;
+    border-width: 0;
+    color: rgb(var(--venia-error));
+    text-decoration: underline;
+}
+
+.root_lowPriority:focus {
+    box-shadow: none;
+}
+
+.root_normalPriority {
+    composes: root;
+}
+.root_highPriority {
+    composes: root filled;
+}

@@ -14,6 +14,7 @@ const Trigger = props => {
 
     const classes = mergeClasses(defaultClasses, props.classes);
     const { children } = props;
+    //console.log('Navbar children data >>>', children)
     return (
         <button
             className={classes.root}

@@ -43,4 +43,41 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.fbButtonContainer{
+    margin-top: 1rem;
+}
+.buttons{
+
+}
+.fbButton{
+    color: #3b5998 ;
+    font-size: 4.5;
+    font-weight: bold;
+}
+.googleButton{
+    color: red;
+    font-size: 4.5;
+    font-weight: bold;
+
+}
+.twitterButton{
+    color: #00acee;
+    font-size: 4.5;
+    font-weight: bold;
+
+}
+.linkedinButton{
+    color: #0e76a8;
+    font-size: 4.5;
+    font-weight: bold;
+
+}
+
+.backToLoginPage {
+    margin-top: 5vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 

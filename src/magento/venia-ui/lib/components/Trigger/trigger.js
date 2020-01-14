@@ -6,7 +6,7 @@ import defaultClasses from './trigger.css';
 
 const Trigger = props => {
     const { action, children } = props;
-
+    
     const classes = mergeClasses(defaultClasses, props.classes);
 
     return (

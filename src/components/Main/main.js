@@ -1,6 +1,7 @@
 import React from 'react';
 import { bool, shape, string } from 'prop-types';
 import { useScrollLock } from '@magento/peregrine';
+import BottomNav from '../../magento/venia-ui/lib/components/BottomNav/bottomNav'
 import Home from '../../magento/venia-ui/lib/components/Home';
 import { mergeClasses } from '@magento/venia-ui/lib/classify';
 import Footer from '../Footer';
@@ -22,6 +23,7 @@ const Main = props => {
     return (
         <main className={rootClass}>
             <Header />
+            <BottomNav />
             {/* <div className={headingClass}>Surmawala Pwa</div> */}
             <div className={pageClass}>{children}</div>
             {/* <div className={pageClass}><Home/></div> */}

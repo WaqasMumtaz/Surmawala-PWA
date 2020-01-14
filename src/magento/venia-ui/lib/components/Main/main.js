@@ -1,7 +1,7 @@
 import React from 'react';
 import { bool, shape, string } from 'prop-types';
 import { useScrollLock } from '@magento/peregrine';
-
+import BottomNav from '../BottomNav';
 import { mergeClasses } from '../../classify';
 import Footer from '../Footer';
 import Header from '../Header';
@@ -19,8 +19,9 @@ const Main = props => {
     return (
         <main className={rootClass}>
             <Header />
-            {console.log('Magento Main page')}
+            
             <div className={pageClass}>{children}</div>
+            <BottomNav />
             <Footer />
         </main>
     );

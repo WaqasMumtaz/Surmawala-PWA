@@ -4,6 +4,7 @@ import { Form } from 'informed';
 import logo from '../Logo/surmawala-icon.svg';
 import { mergeClasses } from '../../classify';
 import Button from '../Button';
+import MyButton from '../MyButton';
 import Field from '../Field';
 import LoadingIndicator from '../LoadingIndicator';
 import TextInput from '../TextInput';
@@ -82,18 +83,20 @@ const SignIn = props => {
                 className={classes.form}
                 onSubmit={handleSubmit}
             >
-                <Field label="Email" required={true}>
+                <Field required={true}>
                     <TextInput
                         autoComplete="email"
                         field="email"
+                        placeholder="email"
                         validate={isRequired}
                     />
                 </Field>
-                <Field label="Password" required={true}>
+                <Field required={true}>
                     <TextInput
                         autoComplete="current-password"
                         field="password"
                         type="password"
+                        placeholder="password"
                         validate={isRequired}
                     />
                 </Field>
@@ -110,10 +113,38 @@ const SignIn = props => {
                     type="button"
                     onClick={handleForgotPassword}
                 >
-                    {'Forgot Password?'}
+                    {'Forgot Password ?'}
                 </Button>
             </div>
-            <div className={classes.signInDivider} />
+            {/* <div className={classes.signInDivider} /> */}
+            <div className={classes.fbButtonContainer}>
+                <MyButton 
+                type="button"
+                content="Log In With Facebook"
+                contentStyle={classes.fbButton}
+                />
+            </div>
+            <div className={classes.buttons}>
+                <MyButton 
+                type="button"
+                content="Log In With Google"
+                contentStyle={classes.googleButton}
+                />
+            </div>
+            <div className={classes.buttons}>
+                <MyButton 
+                type="button"
+                content="Log In With Twitter"
+                contentStyle={classes.twitterButton}
+                />
+            </div>
+            <div className={classes.buttons}>
+                <MyButton 
+                type="button"
+                content="Log In With Linkedin"
+                contentStyle={classes.linkedinButton}
+                />
+            </div>
             <div className={classes.createAccountButton}>
                 <Button
                     priority="normal"

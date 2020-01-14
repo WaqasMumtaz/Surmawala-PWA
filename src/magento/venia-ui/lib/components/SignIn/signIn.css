@@ -33,17 +33,37 @@
     opacity: 0.9;
 }
 
-.createAccountButton,
-.forgotPasswordButton,
+
 .signInButton {
     align-items: center;
     display: flex;
     justify-content: center;
     text-align: center;
 }
+.createAccountButton {
+    margin-top: 5vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.forgotPasswordButton {
+    display: flex;
+    /* justify-content: start; */
+    margin-right: 2vw;
+}
 
 .signInButton {
     margin-top: 1rem;
+}
+.buttons{
+    /* margin-top: 0.2rem; */
+
+}
+.fbButtonContainer{
+    composes:signInButton;
+
 }
 
 .signInDivider {
@@ -72,4 +92,28 @@
     justify-self: center;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.fbButton{
+    color: #3b5998 ;
+    font-size: 4.5;
+    font-weight: bold;
+}
+.googleButton{
+    color: red;
+    font-size: 4.5;
+    font-weight: bold;
+
+}
+.twitterButton{
+    color: #00acee;
+    font-size: 4.5;
+    font-weight: bold;
+
+}
+.linkedinButton{
+    color: #0e76a8;
+    font-size: 4.5;
+    font-weight: bold;
+
 }

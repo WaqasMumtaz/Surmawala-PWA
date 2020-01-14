@@ -29,7 +29,7 @@ export class TextInput extends Component {
             message,
             ...rest
         } = this.props;
- console.log('Sigin In >>>', this.props)
+ //console.log('Sigin In >>>', this.props)
         return (
             <Fragment>
                 <FieldIcons after={after} before={before}>
