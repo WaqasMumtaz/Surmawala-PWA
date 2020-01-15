@@ -8,7 +8,7 @@ const Gallery = props => {
     const classes = mergeClasses(defaultClasses, props.classes);
 
     const { data, pageSize } = props;
-    console.log('Gallery Magento Data >>>', )
+    //console.log('Gallery Magento Data >>>', )
     const hasData = Array.isArray(data) && data.length;
     const items = hasData ? data : emptyData;
 

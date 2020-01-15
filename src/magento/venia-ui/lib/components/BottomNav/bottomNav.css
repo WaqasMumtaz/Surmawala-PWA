@@ -1,7 +1,10 @@
 
 @media (max-device-width: 767px) {
     .mainDivNav{
+        display: flex;
+        justify-content: end;
         visibility: visible;
+        position: fixed;
         /* background-color: red;
         height: 20px; */
     }
@@ -15,8 +18,12 @@
         visibility: hidden;
        
     }
-    .spanColor{
+    /* .spanColor{
         color: black;
         font-size: 4vw;
-    }
+    } */
+}
+.tabsData{
+    display: flex;
+    flex-direction: row;
 }

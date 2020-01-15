@@ -10,7 +10,10 @@
 }
 
 .page {
-    min-height: 100vh;
+    min-height: 82vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
 }
 
 .page_masked {
@@ -18,7 +21,14 @@
 }
 
 .heading{
-    font-size: 0mm;
-    height: 80px;
-    background-color:red;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: fixed;
 }
+.footerClass{
+    margin-top: 10vw;
+}
+/* .bottomTabs{
+    position: fixed;
+} */

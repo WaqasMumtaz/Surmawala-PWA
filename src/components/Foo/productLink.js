@@ -26,7 +26,7 @@ class productLink extends Component {
             <div>
               {/* </div><Link to={"/" + data.products.items[0].url_key + ".html"}> */}
               <Link to={"/" + data.products.items[0].url_key}>
-              <img src={data.products.items[0].image.url} width="80px" /><br /> */}
+              <img src={data.products.items[0].image.url} width="80px" /><br /> 
                 {data.products.items[0].name} 
               </Link>
             </div>
